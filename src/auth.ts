@@ -43,10 +43,10 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         return null;
       },
     }),
-    GitHub({
-      clientId: process.env.AUTH_GITHUB_ID,
-      clientSecret: process.env.AUTH_GITHUB_SECRET,
-    }),
+    // GitHub({
+    //   clientId: process.env.AUTH_GITHUB_ID,
+    //   clientSecret: process.env.AUTH_GITHUB_SECRET,
+    // }),
   ],
   callbacks: {
     signIn: async ({ user, account }) => {
